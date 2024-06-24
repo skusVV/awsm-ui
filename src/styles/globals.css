@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'Ambit-Bold';
-    src: url('/fonts/Ambit/Ambit-Bold.otf') format('opentype');
+    src: url('/fonts/Ambit-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -12,7 +12,47 @@
 
 @font-face {
     font-family: 'Ambit-Regular';
-    src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
+    src: url('/fonts/Ambit-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Recoleta-Black';
+    src: url('/fonts/Recoleta-Black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Recoleta-Bold';
+    src: url('/fonts/Recoleta-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Recoleta-Light';
+    src: url('/fonts/Recoleta_Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Recoleta-Medium';
+    src: url('/fonts/Recoleta_Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Recoleta-Regular';
+    src: url('/fonts/Recoleta_Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -20,15 +60,30 @@
 
 @font-face {
     font-family: 'Recoleta-SemiBold';
-    src: url('/fonts/Recoleta/Recoleta_SemiBold.otf') format('opentype');
-    font-weight: bold;
+    src: url('/fonts/Recoleta_SemiBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Recoleta-Thin';
+    src: url('/fonts/Recoleta_Thin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'StingerWideTrial-Heavy';
+    src: url('/fonts/StingerWideTrial-Heavy.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 body {
     background: #FFFBF9;
-    font-family: 'Recoleta-SemiBold', sans-serif;
 }
 
 .wrapper {
