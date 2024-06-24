@@ -10,14 +10,15 @@ const options = {
   useUnifiedTopology: true,
 };
 
-let isConnected: boolean = false; // Track the connection
+let isConnected = false; // Track the connection
 
 export const connectToDatabase = async () => {
   if (isConnected) {
     return;
   }
 
-  await mongoose.connect(uri, options as any);
+  // @ts-expect-error "it okay"
+  await mongoose.connect(uri, options);
   isConnected = true;
   console.log("Connected to MongoDB");
 };
