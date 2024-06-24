@@ -1,11 +1,9 @@
-import './header.css'
+import styles from './Header.module.css';
 
-export default async function Header() {
-
+export default function Header() {
     return (
-        <header className="wrapper header">
+        <header className={`wrapper ${styles.header}`}>
             AWESOME SMOOTHIES
         </header>
     );
 }
-
