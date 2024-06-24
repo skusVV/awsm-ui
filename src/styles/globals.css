@@ -2,8 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Ambit-Bold';
+    src: url('/fonts/Ambit/Ambit-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ambit-Regular';
+    src: url('/fonts/Ambit/Ambit-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Recoleta-SemiBold';
+    src: url('/fonts/Recoleta/Recoleta_SemiBold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     background: #FFFBF9;
+    font-family: 'Recoleta-SemiBold', sans-serif;
 }
 
 .wrapper {
