@@ -1,0 +1,163 @@
+/* components/Ad.module.css */
+
+.ad {
+    width: calc(100vw - 160px);
+    max-width: 100%;
+    height: 360px;
+    padding: 0 80px;
+    margin: 80px auto 0 auto;
+    /*background: #FFB0A8;*/
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1080px) {
+    .ad {
+        width: calc(100vw - 10vw);
+        margin: 10vw auto 0 auto;
+        height: calc(100vw - 10vw);
+    }
+}
+
+.poster {
+    text-decoration: none;
+    width: 88vw;
+    max-width: 980px;
+    padding: 0 10px;
+    margin: 80px auto 0 auto;
+    box-sizing: border-box;
+    height: 980px;
+    background-image: url('https://storage.googleapis.com/smoothie_bucket/banners/Carb%20Banner%20Mobile.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.posterWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.posterContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 79px;
+    width: 751px;
+}
+
+.posterTitle, .posterSubtitle {
+    font-family: 'Recoleta-Bold', serif;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 87px;
+    text-align: center;
+    color: #FDF0EA; /* Typography bright color */
+}
+
+.posterSubtitle {
+    color: #401317; /* Typography dark color */
+}
+
+.posterLink {
+    width: 64%;
+}
+
+.posterButton {
+    position: relative;
+    margin: 22px 30px 20px 0px;
+    width: 100%;
+    height: 120px;
+    border: 1px solid #2F222B; /* Chocolate color */
+    background-color: #2F222B; /* Chocolate color */
+    cursor: pointer;
+    font-family: 'Ambit-Regular', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    color: #FDF0EA; /* Typography bright color */
+}
+
+.posterButton:after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: -20px;
+    bottom: -20px;
+    border: 3px solid #2F222B; /* Chocolate color */
+}
+
+@media screen and (max-width: 470px) {
+    .poster {
+        padding: 0 30px;
+        height: 400px;
+    }
+
+    .posterTitle, .posterSubtitle {
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+    .posterContent {
+        margin-top: 32px;
+    }
+
+    .posterButton {
+        font-size: 16px;
+        line-height: 18px;
+        height: 40px;
+    }
+
+    .posterButton:after {
+        top: 5px;
+        left: 5px;
+        right: -5px;
+        bottom: -5px;
+        border: 3px solid #2F222B; /* Chocolate color */
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .poster {
+        height: 360px;
+        width: 1280px;
+        max-width: 88vw;
+        background-image: url('https://storage.googleapis.com/smoothie_bucket/banners/Carb%20Banner%20Desktop.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .posterTitle, .posterSubtitle {
+        font-size: 48px;
+        line-height: 65px;
+    }
+
+    .posterContent {
+        margin-top: 38px;
+        width: 617px;
+    }
+
+    .posterButton {
+        width: 240px;
+        height: 60px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .posterButton:after {
+        top: 10px;
+        left: 10px;
+        right: -10px;
+        bottom: -10px;
+        border: 2px solid #2F222B; /* Chocolate color */
+    }
+
+    .posterLink {
+        width: auto;
+    }
+}
